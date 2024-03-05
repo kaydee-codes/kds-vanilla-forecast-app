@@ -1,0 +1,63 @@
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>The Weather</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="app-city"></h1>
+            <p class="weather-app-details">
+            <span id="time"></span>
+              <span id="description"></span> 
+              <br />
+              Humidity: <strong id="humidity"></strong>, 
+              Wind: <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-numeral" id="temp"></div> 
+            <div class="weather-app-metric"> °F </div>
+        </div>
+      </main>
+      <footer>
+        Built by
+        <a href="https://github.com/kaydee-codes" target="_blank"> Kaydee </a> ,
+        and is
+        <a href="https://github.com/" target="_blank"
+          >open-sourced on Github
+        </a>
+        and
+        <a href="https://www.netlify.com/" target="_blank"
+          >hosted on Netlify
+        </a>
+      </footer>
+    </div>
+    <script src="src/javascript.js"></script>
+  </body>
+</html>
